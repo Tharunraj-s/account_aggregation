@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/css_final.css">
+    <script src="./assets/js/filter.js"></script>
+    <title>Fixed table</title>
+</head>
+
+<body>
+    <div class="heading">
+    <h1>Account Aggregator</h1>
+</div>
+<div class="otp">
+    <h4>OTP Verified..</h4>
+    <br>
+    <h4>Your ID is 101</h4>
+</div>
+    <div class="outer-wrapper">
+    <div class="table-wrapper">
+    <table id="emp-table" class="center">
+        <thead>
+            <th col-index = 1>ID
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 2>Name </th>
+            <th col-index = 3>Gender</th>
+
+            <th col-index = 4>Salary
+               
+            </th>
+            <th col-index = 5>Investment
+             
+            </th>
+            <th col-index = 6>Deposits
+               
+            </th>
+            <th col-index = 7>Expenses
+               
+            </th>
+            <th col-index = 8>Tax-Returns
+               
+            </th>
+            <th col-index = 9>Equity
+               
+            </th>
+            
+        </thead>
+        <tbody>
+            <tr class="Hello">
+                <td>101</td>
+                <td>satz</td>
+                <td>Male</td>
+                <td>2500000</td>
+                <td>25669</td>
+                <td>60000 </td>
+                <td>96700</td>
+                <td>89000</td>
+                <td>23000</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Tharun</td>
+                <td>Male</td>
+                <td>4500000</td>
+                <td>23456</td>
+                <td>50000</td>
+                <td>86500</td>
+                <td>90000</td>
+                <td>34562</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Biswa</td>
+                <td>Male</td>
+                <td>3500000</td>
+                <td>34567</td>
+                <td>98765</td>
+                <td>65741</td>
+                <td>98763</td>
+                <td>57465</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Hari</td>
+                <td>Male</td>
+                <td>2300000</td>
+                <td>23456</td>
+                <td>85769</td>
+                <td>98765</td>
+                <td>43985</td>
+                <td>85746</td>
+
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>James</td>
+                <td>Male</td>
+                <td>23456</td>
+                <td>92514</td>
+                <td>68674</td>
+                <td>34501</td>
+                <td>34920</td>
+                <td>74599</td>
+            </tr>
+    
+
+
+        </tbody>
+    </table>
+    <script>
+        window.onload = () => {
+            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+        };
+
+        getUniqueValuesFromColumn()
+        
+    </script>
+</div>
+</div>
+<div class="outer-wrapper">
+    <div class="table-wrapper">
+    <table id="emp-table" class="center">
+        <thead>
+            <th col-index = 1>ID
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 2>Transaction </th>
+            <th col-index = 3>Credit</th>
+
+            <th col-index = 4>Debit</th>
+            
+        </thead>
+        <tbody>
+            <tr >
+                <td>101</td>
+                <td>UPI, Paytm</td>
+                <td>10000</td>
+                <td>7980</td>
+                
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Paytm</td>
+                <td>9966</td>
+                <td>6576</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>gpay</td>
+                <td>8001</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>PhonePe,gpay</td>
+                <td>7979</td>
+                <td>8777</td>
+
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>Paytm,PhonePe,gpay</td>
+                <td>56789</td>
+                <td>23450</td>
+            </tr>
+    
+
+
+        </tbody>
+    </table>
+    <div>
+        <div></div>
+    </div>
+    <button type="submit" class="goback"><a href="login.html">Go back to login page</a></button>
+
+    <script>
+        window.onload = () => {
+            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+        };
+
+        getUniqueValuesFromColumn()
+        
+    </script>
+</div>
+</div>
+</body>
+
+</html>
